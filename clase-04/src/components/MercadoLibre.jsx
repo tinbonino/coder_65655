@@ -8,7 +8,7 @@ function MercadoLibre() {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get("https://api.mercadolibre.com/sites/MLA/search?q=pepe&limit=20")
+                const response = await axios.get("https://api.mercadolibre.com/sites/MLA/search?q=navidad&limit=20")
                 setProducts(response.data.results)
             }
             catch (error) {
